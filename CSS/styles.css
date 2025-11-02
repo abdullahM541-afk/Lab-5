@@ -69,9 +69,12 @@ nav a {
   padding: 0.5em 0; /* creates height without thick blocks */
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   text-decoration: underline;
+}
+
+nav a.active {
+  text-decoration: none; /* Removes the always-on underline */
 }
 
 /* Hero Image */
@@ -241,6 +244,7 @@ footer a:hover {
     height: 400px;
   }
 }
+
 
 
 
