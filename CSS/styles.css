@@ -221,25 +221,63 @@ footer a:hover {
   display: none;
 }
 
-/* ✨ Add a media query for desktop so the hero image & nav spacing look correct */
-@media screen and (min-width: 768px) {
-  .tab-desk {
+/* =========================================
+   Mobile Styles
+   ========================================= */
+@media only screen and (max-width: 600px) {
+  /* Make nav links stack vertically */
+  nav ul {
     display: block;
+    width: 100%;
+    padding: 0;
   }
 
   nav li {
-    padding: 0 1em;
+    display: block;
+    border-top: 1px solid #e5e9fc;
+    margin: 0;
   }
 
+  nav a {
+    display: block;
+    padding: 1em;
+    font-size: 1.2em;
+    border-bottom: 1px solid #4a47a3;
+  }
+
+  /* Adjust header */
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* Main content fits inside smaller screen */
   main {
-    padding: 3% 10%;
+    padding: 1em;
+  }
+
+  /* Center contact box and shrink width */
+  .tel-link {
+    width: 90%;
+    font-size: 1em;
+    padding: 1em;
   }
 
   .map {
-    width: 60%;
-    height: 400px;
+    width: 90%;
+    height: 250px;
+  }
+
+  /* Center all text */
+  #contact, main, footer {
+    text-align: center;
   }
 }
+
 
 
 
