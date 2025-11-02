@@ -1,0 +1,246 @@
+/*
+    Author: Abdullah Motala
+    Date: 10/25/2025
+    File name: styles.css
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body background */
+body {
+  background-color: #ffffff;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: #373684;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5em;
+  color: #373684;
+  margin-bottom: 0.5em;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #373684;
+  text-align: center;
+  padding: 0.75em 0; /* ✨ thicker bar to match original */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline; /* ✨ simpler spacing, more like your original layout */
+  margin: 0 1.5em; /* evenly spaces out links */
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em 0; /* creates height without thick blocks */
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero Image */
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Section */
+main {
+  font-family: 'Roboto', sans-serif;
+  padding: 2%;
+  background-color: #e5e9fe;
+  overflow: auto;
+  text-align: none; /* ✨ Added: ensures centered content like in the original */
+}
+
+main h2,
+main h3 {
+  color: #373684;
+}
+
+main p {
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+
+/* Highlight */
+.action {
+  font-size: 1.25em;
+  color: #393875;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  background-color: #fff;
+  color: #373684;
+  padding: 1em 0;
+  border-top: 2px solid #373684;
+}
+
+footer a {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page */
+#contact {
+  text-align: center;
+  background-color: #e5e9fe;
+  padding: 2em 0;
+}
+
+#contact h2 {
+  color: #373684;
+  margin-bottom: 0.75em;
+}
+
+#contact p {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+#contact a {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+/* Fix phone number color override */
+#contact .tel-link a {
+  color: #ffffff !important;  /* force white text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact .tel-link a:hover {
+  text-decoration: underline;
+}
+
+/* Phone link section */
+.tel-link {
+  background-color: #373684; /* dark purple-blue background */
+  padding: 1em;
+  margin: 1em auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color: #ffffff; /* ensures the phone number is visible */
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.tel-link a:hover {
+  text-decoration: underline;
+}
+
+/* Email link section */
+.email-link {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.email-link a {
+  color: #4645a8; /* purple text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link a:hover {
+  text-decoration: underline;
+}
+
+/* Map */
+.map {
+  width: 90%;
+  max-width: 600px;
+  height: 300px; /* ✨ fixed height for better balance */
+  border: 5px solid #373684;
+  margin: 2em auto;
+  display: block; /* centers map */
+}
+
+/* Rounded Images */
+.round {
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+.tab-desk {
+  display: none;
+}
+
+/* ✨ Add a media query for desktop so the hero image & nav spacing look correct */
+@media screen and (min-width: 768px) {
+  .tab-desk {
+    display: block;
+  }
+
+  nav li {
+    padding: 0 1em;
+  }
+
+  main {
+    padding: 3% 10%;
+  }
+
+  .map {
+    width: 60%;
+    height: 400px;
+  }
+}
+
+
+
